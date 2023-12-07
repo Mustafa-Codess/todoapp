@@ -32,7 +32,7 @@ function addtodo(){
 
   }
   else{
-    alert("please")
+    alert("please enter something")
   }
 
 
@@ -53,8 +53,18 @@ function disp(){
   
   }
 
-  onload = function(){
+  onload = function (){
 
+    let dataLS = JSON.parse(localStorage.getItem('data')) || []
+    
+    listData = dataLS.map((e)=>{
+      return {
+        "title" : e.title,
+        "desc" : e.desc
+      
+    }})
+    disp();
+    
   }
   
   
