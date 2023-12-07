@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>todo</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+       <h1> Todo List</h1>
+
+       
+        <label for="title">Title</label>
+       <input type="text" id="title" placeholder="Title">
+
+        <label for="desc">Description</label>
+       <textarea name="desc" id="desc" cols="30" rows="10" placeholder="Description"></textarea>
+
+      <div>
+        <button id="btn"  onclick="addtodo()">Add Todo</button>
+      </div> 
+
+
+      
+      <div id="todo"></div>
+      
+    </div>
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
